@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafqi Putra | Network Engineer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080f1c;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 9%;
+    background: #0b1525;
+    border-bottom: 1px solid #172a40;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    min-height: 85vh;
+    padding: 100px 9%;
+    display: flex;
+    align-items: center;
+    background:
+    radial-gradient(circle at 85% 40%, #123b5b 0%, transparent 35%),
+    #080f1c;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.tag {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    color: #94a3b8;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #38bdf8;
+    color: #08111f;
+}
+
+section {
+    padding: 80px 9%;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    color: #38bdf8;
+}
+
+.subtitle {
+    color: #94a3b8;
+    margin-bottom: 35px;
+}
+
+.about {
+    background: #0b1525;
+}
+
+.about p {
+    color: #b6c3d4;
+    max-width: 850px;
+}
+
+.skills-grid,
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #101e31;
+    border: 1px solid #1e3853;
+    padding: 25px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.contact {
+    text-align: center;
+    background: #0b1525;
+}
+
+.contact p {
+    color: #94a3b8;
+    margin: 15px 0 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+    font-size: 13px;
+    border-top: 1px solid #172a40;
+}
+
+@media(max-width: 650px) {
+    header {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 80px 7%;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">RAFQI.DEV</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="home">
+    <div class="hero-content">
+        <div class="tag">JUNIOR NETWORK ENGINEER</div>
+
+        <h1>
+            Hello, I'm<br>
+            <span>Rafqi Putra Badjeber</span>
+        </h1>
+
+        <p>
+            Siswa kelas 10 TJKT (Teknik Jaringan Komputer
+            dan Telekomunikasi) yang memiliki minat dalam
+            dunia networking, teknologi, dan infrastruktur
+            jaringan komputer.
+        </p>
+
+        <a href="#about" class="btn">Explore My Profile →</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2 class="section-title">About <span>Me.</span></h2>
+    <p class="subtitle">Mengenal lebih dekat tentang saya</p>
+
+    <p>
+        Perkenalkan, nama saya Rafqi Putra Badjeber.
+        Saya merupakan siswa kelas 10 TJKT yang sedang
+        mempelajari bidang Teknik Jaringan Komputer dan
+        Telekomunikasi.
+
+        Saya memiliki ketertarikan terhadap teknologi
+        jaringan komputer, konfigurasi perangkat jaringan,
+        troubleshooting, serta perkembangan teknologi
+        informasi. Saya terus belajar dan mengembangkan
+        kemampuan untuk menjadi seorang Network Engineer
+        yang profesional di masa depan.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">My <span>Skills.</span></h2>
+    <p class="subtitle">Bidang yang sedang saya pelajari</p>
+
+    <div class="skills-grid">
+
+        <div class="card">
+            <h3>01. Networking</h3>
+            <p>
+                Mempelajari dasar jaringan komputer,
+                LAN, WAN, dan topologi jaringan.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>02. Hardware</h3>
+            <p>
+                Mengenal perangkat komputer,
+                router, switch, dan kabel jaringan.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>03. Troubleshooting</h3>
+            <p>
+                Mempelajari cara mengidentifikasi
+                dan menganalisis masalah jaringan.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>04. Programming</h3>
+            <p>
+                Mempelajari HTML, CSS, dan dasar
+                pembuatan website.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project" class="about">
+    <h2 class="section-title">My <span>Projects.</span></h2>
+    <p class="subtitle">Karya dan pembelajaran saya</p>
+
+    <div class="project-grid">
+
+        <div class="card">
+            <h3>Network Topology</h3>
+            <p>
+                Pembelajaran membuat dan memahami
+                topologi jaringan komputer.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>HTML Portfolio</h3>
+            <p>
+                Membuat website portofolio pribadi
+                menggunakan HTML dan CSS.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Computer Networking</h3>
+            <p>
+                Mempelajari dasar konfigurasi
+                dan perangkat jaringan komputer.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Let's <span>Connect.</span></h2>
+
+    <p>
+        Terus belajar, berkembang, dan membangun
+        masa depan di dunia teknologi.
+    </p>
+
+    <a href="mailto:emailkamu@gmail.com" class="btn">
+        Contact Me
+    </a>
+</section>
+
+<footer>
+    © 2026 Rafqi Putra Badjeber.
+    Junior Network Engineer Portfolio.
+</footer>
+
+</body>
+</html>
